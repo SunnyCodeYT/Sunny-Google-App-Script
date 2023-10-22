@@ -1,10 +1,1 @@
-function myFunction() {
-  var forms = FormApp.getActiveForm();
-  var form_res = forms.getResponses();
-  var responses = form_res[form_res.length - 1]
-  var itemResponse = responses.getItemResponses();
-  var calendarid = ''; //calendar Id
-  var calendar = CalendarApp.getCalendarById(calendarid)
-  var event = calendar.createEvent(itemResponse[0].getResponse(), new Date(itemResponse[1].getResponse()), new Date(itemResponse[2].getResponse()))
-  
-}
+
